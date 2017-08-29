@@ -1,7 +1,9 @@
 body, html{
   height:100%;
+  
 }
 body{
+  
   margin: 0px;
   background-color:#444;
   font-size: 18px;
@@ -10,8 +12,10 @@ body{
   background-size: cover;
 }
 body, a:link, a:visited, a:active{
-  color: purple;
+  color: #8f79e2;
 }
+
+
 /*.title, .addDancerButton{
   padding:5px 12px;
   float:right;
@@ -23,10 +27,20 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }*/
+h1 {
+font-family: 'Permanent Marker', cursive;
+/*font-family: 'Baloo Tammudu', cursive;*/
+}
+
+a {
+/*font-family: 'Permanent Marker', cursive;*/
+font-family: 'Baloo Tammudu', cursive;
+}
+
 .dancer{
-  background-image: url("http://pngimg.com/uploads/dolphin/dolphin_PNG9132.png");
-  height:243px;
-  width: 373px;
+  background-image: url("http://24.media.tumblr.com/2adc6464878e596bfcd279b2e8453b3d/tumblr_mg6i81c6Fg1riusceo1_250.gif");
+  height:200px;
+  width: 182px;
   opacity: 0.8;
   /*border:05px solid red;*/
 
@@ -35,16 +49,29 @@ body, a:link, a:visited, a:active{
 }
 
 .shark {
-  background-image: url("http://www.officialpsds.com/images/thumbs/Great-White-Shark-psd82956.png");
-  height:196px;
-  width: 400px;
+  background-image: url("https://orig11.deviantart.net/bfd7/f/2015/214/e/a/animated_pixel_eyeball_by_aksonex-d93ub3a.gif");
+  height:250px;
+  width: 250px;
   position:absolute;
+}
+
+.hypnotic {
+  background-image: url("https://i1.wp.com/trippy.me/wp-content/uploads/Trippy-Spiral.gif?resize=500%2C500");
+  height:500px;
+  width: 500px;
+  position:absolute;
+
 }
 
 .well {
   text-align:center;
+  opacity: 0.3;
 }
 
 #shark{
   margin:100px 100px;
 }
+
+h1 {
+color: #e5acf0;
+    }

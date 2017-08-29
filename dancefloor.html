@@ -2,37 +2,37 @@
 <html>
   <head>
     <h1><title>Object Dance Party</title></h1>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="lib/jquery.js"></script>
     <script src="src/dancer.js"></script>
     <script src="src/blinkyDancer.js"></script>
     <script src="src/shark.js"></script>
+    <script src="src/hypnotic.js"></script>
    <script type="text/javascript" src="http://beneposto.pl/jqueryrotate/js/jQueryRotateCompressed.js"></script>
-
-    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu|Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
-    
     <div class="container-fluid">
-      <div class="well">
-        <span class="title">OBJECT DANCE PARTY</span>
+        <h1>UNIVERSAL DANCE PARTY</h1>
+      <!-- <div class="well"> -->
+        <a href="#" class="addHypnotic btn" data-dancer-maker-function-name="addHypnotic">HYPNOTIC!</a> 
 
-        <a href="#" class="addDancerButton btn" data-dancer-maker-function-name="makeBlinkyDancer">+BLINKY DANCER</a>   
-        <a href="#" class="lineUpButton btn" data-dancer-maker-function-name="lineUpDancer">LINE UP!</a>    
+        <a href="#" class="addDancerButton btn" data-dancer-maker-function-name="makeBlinkyDancer">SKELLY-SHAKE</a>   
         
-        <a href="#" class="addSharkButton btn" data-dancer-maker-function-name="addShark">SHARK ATTACK!</a> 
-       </div>
+        <a href="#" class="addSharkButton btn" data-dancer-maker-function-name="addShark">EYE ROLL!</a>
+        
+       <!-- <div> -->
+        <a href="#" class="lineUpButton btn" data-dancer-maker-function-name="lineUpDancer">LINE UP!</a>    
+       <!-- </div> -->
     </div>
-    <!-- <img src="https://www.google.com/images/srpr/logo3w.png" id="image"> -->
-    <script type="text/javascript">
-    var angle = 0;
-    setInterval(function() {
-      angle += 3;
-      $('.shark').rotate(angle);
-    }, 50);
-
-   </script>
     <script src="src/init.js"></script>
+    <script type="text/javascript">
+      
+  $('span').on('mouseenter', function(event) {
+    console.log('mousing over');
+    // this.$node.hide();
+  });
+    </script>
   </body>
 </html>

@@ -68,11 +68,34 @@ $(document).ready(function() {
     window.dancers.push(dancer);
   });
 
+  $('.addHypnotic').on('click', function(event) {
+    
+    var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
+    // console.log(dancerMakerFunctionName);
+    // get the maker function for the kind of dancer we're supposed to make
+    var dancerMakerFunction = window[dancerMakerFunctionName];
+    // console.log('dancerMakerFunction', dancerMakerFunction)
+    // console.log(dancerMakerFunction);
+    // make a dancer with a random position
+
+    var dancer = new dancerMakerFunction(
+      $('body').height() * Math.random(),
+      $('body').width() * Math.random(),
+      Math.random() * (1000 - 500) + 500
+    );
+    $('body').append(dancer.$node);
+    // console.log(dancer);
+    window.dancers.push(dancer);
+  });
 
 
 
 
 
+  $('span').on('mouseenter', function(event) {
+    console.log('mousing over');
+    // this.$node.hide();
+  });
 
 
 
