@@ -21,7 +21,7 @@ var makeDancer = function(top, left, timeBetweenSteps) {
 
 makeDancer.prototype.lineUp = function() {
   // console.log("I want to line up");
-  this.setPosition(this.top, 0);
+  this.setPosition(100);
 };
 
 makeDancer.prototype.step = function() {

@@ -7,9 +7,13 @@
     <script src="src/dancer.js"></script>
     <script src="src/blinkyDancer.js"></script>
     <script src="src/shark.js"></script>
+   <script type="text/javascript" src="http://beneposto.pl/jqueryrotate/js/jQueryRotateCompressed.js"></script>
+
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   </head>
   <body>
+    
     <div class="container-fluid">
       <div class="well">
         <span class="title">OBJECT DANCE PARTY</span>
@@ -20,8 +24,15 @@
         <a href="#" class="addSharkButton btn" data-dancer-maker-function-name="addShark">SHARK ATTACK!</a> 
        </div>
     </div>
-   
+    <!-- <img src="https://www.google.com/images/srpr/logo3w.png" id="image"> -->
+    <script type="text/javascript">
+    var angle = 0;
+    setInterval(function() {
+      angle += 3;
+      $('.shark').rotate(angle);
+    }, 50);
 
+   </script>
     <script src="src/init.js"></script>
   </body>
 </html>

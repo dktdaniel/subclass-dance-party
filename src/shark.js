@@ -3,11 +3,12 @@ var addShark = function(top, left, timeBetweenSteps) {
   
   makeDancer.call(this, top, left, timeBetweenSteps);
   //overwrites the node passing in shark class
-  this.$node = $('<span class="shark"></span>');
-  console.log(this.$node);
+  this.$node = $('<span class="shark" id="image"></span>');
+  console.log('this.$node');
   //we have to run setposition again since setposition acts on node
   this.setPosition(top, left);
-  this.$node.animate({left: '+=100px'}).fadeToggle("slow");
+  this.$node.animate( {left: '-=250px', opacity: '0.9'}).animate({rotate: '30deg'},1000);
+
 
   // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
   // so we must keep a copy of the old version of this function
@@ -29,4 +30,8 @@ addShark.prototype.step = function() {
   // other effects you can use on a jQuery-wrapped html tag.
 
   this.$node.toggle();
+
+addShark.prototype.lineUp = function() {
+  this.setPosition(200, 400);
+}
 };

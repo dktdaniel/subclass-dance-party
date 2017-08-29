@@ -6,11 +6,11 @@ body{
   background-color:#444;
   font-size: 18px;
 
-  background-image: url("http://www.powerpointhintergrund.com/uploads/ocean-underwater-wallpaper-hd-24.jpeg");
+  background-image: url("http://cdn.wallpapersafari.com/47/35/JtnRo8.jpg");
   background-size: cover;
 }
 body, a:link, a:visited, a:active{
-  color: lightblue;
+  color: purple;
 }
 /*.title, .addDancerButton{
   padding:5px 12px;
@@ -27,6 +27,7 @@ body, a:link, a:visited, a:active{
   background-image: url("http://pngimg.com/uploads/dolphin/dolphin_PNG9132.png");
   height:243px;
   width: 373px;
+  opacity: 0.8;
   /*border:05px solid red;*/
 
   /*border-radius:1px;*/
@@ -42,4 +43,8 @@ body, a:link, a:visited, a:active{
 
 .well {
   text-align:center;
+}
+
+#shark{
+  margin:100px 100px;
 }
