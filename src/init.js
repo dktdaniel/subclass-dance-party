@@ -15,20 +15,69 @@ $(document).ready(function() {
      * A new object of the given type will be created and added
      * to the stage.
      */
-    console.log("inside fundc",this);
+    // console.log("inside fundc",this);
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
     // console.log(dancerMakerFunctionName);
     // get the maker function for the kind of dancer we're supposed to make
     var dancerMakerFunction = window[dancerMakerFunctionName];
-
+    // console.log('dancerMakerFunction', dancerMakerFunction)
+    // console.log(dancerMakerFunction);
     // make a dancer with a random position
 
     var dancer = new dancerMakerFunction(
       $('body').height() * Math.random(),
       $('body').width() * Math.random(),
-      Math.random() * 1000
+      Math.random() * (1000 - 500) + 500
     );
     $('body').append(dancer.$node);
+    // console.log(dancer);
+    window.dancers.push(dancer);
   });
+
+
+
+  //line up button
+  $('.lineUpButton').on('click', function(event) {
+    console.log(window.dancers);
+    // var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
+    // // console.log(dancerMakerFunctionName);
+    // // get the maker function for the kind of dancer we're supposed to make
+    // var dancerMakerFunction = window[dancerMakerFunctionName];   
+    for (var i = 0; i < window.dancers.length; i++) {
+      window.dancers[i].lineUp();
+    }
+  });
+
+  $('.addSharkButton').on('click', function(event) {
+    
+    var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
+    // console.log(dancerMakerFunctionName);
+    // get the maker function for the kind of dancer we're supposed to make
+    var dancerMakerFunction = window[dancerMakerFunctionName];
+    // console.log('dancerMakerFunction', dancerMakerFunction)
+    // console.log(dancerMakerFunction);
+    // make a dancer with a random position
+
+    var dancer = new dancerMakerFunction(
+      $('body').height() * Math.random(),
+      $('body').width() * Math.random(),
+      Math.random() * (1000 - 500) + 500
+    );
+    $('body').append(dancer.$node);
+    // console.log(dancer);
+    window.dancers.push(dancer);
+  });
+
+
+
+
+
+
+
+
+
+
+
+
 });
 

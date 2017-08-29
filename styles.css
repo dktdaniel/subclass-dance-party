@@ -12,17 +12,17 @@ body{
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton{
+/*.title, .addDancerButton{
   padding:5px 12px;
   float:right;
-}
-.topbar{
+}*/
+/*.topbar{
   height:32px;
   background-color: #555;
 }
 .title{
   background-color: #777;
-}
+}*/
 .dancer{
   background-image: url("http://pngimg.com/uploads/dolphin/dolphin_PNG9132.png");
   height:243px;
@@ -33,3 +33,13 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 
+.shark {
+  background-image: url("http://www.officialpsds.com/images/thumbs/Great-White-Shark-psd82956.png");
+  height:196px;
+  width: 400px;
+  position:absolute;
+}
+
+.well {
+  text-align:center;
+}
