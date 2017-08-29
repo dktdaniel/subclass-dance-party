@@ -15,8 +15,9 @@ $(document).ready(function() {
      * A new object of the given type will be created and added
      * to the stage.
      */
+    console.log("inside fundc",this);
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
-    console.log(dancerMakerFunctionName);
+    // console.log(dancerMakerFunctionName);
     // get the maker function for the kind of dancer we're supposed to make
     var dancerMakerFunction = window[dancerMakerFunctionName];
 
@@ -25,7 +26,7 @@ $(document).ready(function() {
     var dancer = new dancerMakerFunction(
       $('body').height() * Math.random(),
       $('body').width() * Math.random(),
-      Math.random() * 3000
+      Math.random() * 1000
     );
     $('body').append(dancer.$node);
   });
