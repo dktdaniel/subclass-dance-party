@@ -7,11 +7,12 @@ var addHypnotic = function(top, left, timeBetweenSteps) {
   // console.log('this.$node');
   //we have to run setposition again since setposition acts on node
   this.setPosition(top, left);
-  this.$node.animate( {left: '-=250px', opacity: '0.9'}).animate({rotate: '30deg'}, 1000);
+  this.$node.animate( {left: '-=50px', opacity: '0.9'}).animate({rotate: '30deg'}, 1000);
   
+  //double click follow
   var context = this;
   $(document).dblclick(function(event) {
-    context.$node.animate({top: event.pageX});
+    context.$node.animate({top: event.pageY, left: event.pageX});
   });
 
 };
