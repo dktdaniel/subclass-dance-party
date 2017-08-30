@@ -9,6 +9,10 @@ var addHypnotic = function(top, left, timeBetweenSteps) {
   this.setPosition(top, left);
   this.$node.animate( {left: '-=250px', opacity: '0.9'}).animate({rotate: '30deg'}, 1000);
   
+  var context = this;
+  $(document).dblclick(function(event) {
+    context.$node.animate({top: event.pageX});
+  });
 
 };
 

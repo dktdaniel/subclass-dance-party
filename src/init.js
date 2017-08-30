@@ -88,19 +88,5 @@ $(document).ready(function() {
     window.dancers.push(dancer);
   });
 
-
-
-
-
-  $('span').on('mouseenter', function(event) {
-    console.log('mousing over');
-    // this.$node.hide();
-  });
-
-
-
-
-
-
 });
 
